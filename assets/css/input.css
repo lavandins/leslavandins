@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+    --color-provence-primary: #798A65;
+    --color-provence-secondary: #B08A5D;
+    --color-provence-bg: #FDFBF5;
+    --color-provence-text: #333333;
+
+    --font-heading: Lora, serif;
+    --font-body: Lato, sans-serif;
+}
+
+/* Animation pour l'apparition de la Lightbox */
+#lightbox {
+    transition: opacity 0.3s ease-in-out;
+}
+
+#lightbox.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#lightbox:not(.hidden) {
+    opacity: 1;
+    pointer-events: auto;
+}

@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<!-- 
+  Langue du document : 'fr' pour Français. 
+  class="scroll-smooth" : Permet un défilement doux quand on clique sur les liens du menu.
+-->
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Viewport : Indispensable pour que le site s'adapte aux téléphones mobiles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ================================================================== -->
+    <!-- 1. SECTION SEO (Optimisation pour les Moteurs de Recherche)        -->
+    <!-- Cette partie est invisible pour l'utilisateur, mais lue par Google.-->
+    <!-- ================================================================== -->
+
+    <!-- Le titre qui apparaît dans l'onglet du navigateur et en bleu sur Google -->
+    <title>Location "Les Lavandins" - T1 de Charme en Provence (Var)</title>
+
+    <!-- La description courte sous le lien bleu dans Google. Doit donner envie de cliquer. -->
+    <meta name="description"
+        content="Découvrez Les Lavandins : location d'un T1 de 40m² de plain-pied pour 3-4 personnes à Tourettes (Var). Proche Lac St-Cassien, à 35km de la mer. Calme et confort.">
+
+    <!-- Indique à Google quelle est l'adresse "officielle" de cette page (évite le contenu dupliqué) -->
+    <link rel="canonical" href="https://lavandins.eu" />
+
+    <!-- Liste de mots-clés -->
+    <meta name="keywords"
+        content="location vacances var, gite tourettes, T1 indépendant provence, location lac saint cassien, hébergement var 4 personnes">
+
+    <meta name="author" content="Les Lavandins">
+
+    <!-- FAVICON (Petite icône dans l'onglet) -->
+    <link rel="icon" href="assets/images/favicon.svg">
+
+    <!-- !!! ATTENTION : MODE PRIVÉ ACTIVÉ !!! -->
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- === GÉOLOCALISATION === -->
+    <meta name="geo.region" content="FR-83">
+    <meta name="geo.placename" content="Tourettes">
+    <meta name="geo.position" content="43.612417;6.730444">
+    <meta name="ICBM" content="43.612417, 6.730444">
+
+    <!-- === RÉSEAUX SOCIAUX (Open Graph) === -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lavandins.eu">
+    <meta property="og:title" content="Les Lavandins - Votre cocon en Provence">
+    <meta property="og:description"
+        content="Location T1 de charme à Tourettes (Var). Proche Lac St-Cassien et Mer. Idéal 3-4 personnes.">
+    <meta property="og:image" content="assets/images/hero-bg.webp">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- === DONNÉES STRUCTURÉES (JSON-LD) === -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VacationRental",
+      "name": "Les Lavandins",
+      "description": "Appartement T1 de 40m² indépendant dans villa provençale, proche tous commerces et Lac de Saint-Cassien.",
+      "url": "https://lavandins.eu",
+      "image": [
+        "https://lavandins.eu/assets/images/hero-bg.webp",
+        "https://lavandins.eu/assets/images/room-bedroom.webp"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tourettes",
+        "addressRegion": "Var",
+        "postalCode": "83440",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 43.612417,
+        "longitude": 6.730444
+      },
+      "telephone": "+33695453958",
+      "email": "contact@lavandins.eu",
+      "priceRange": "€€",
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "Parking gratuit", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Cuisine équipée", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Proche Lac Saint-Cassien", "value": true }
+      ]
+    }
+    </script>
+
+    <!-- ================================================================== -->
+    <!-- 2. CHARGEMENT DES RESSOURCES (Styles et Polices)                   -->
+    <!-- ================================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <!-- Tailwind CSS -->
+    <!-- Tailwind CSS (Local Build) -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <!-- Polices Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Configuration PERSONNALISÉE du design -->
+
+    <!-- Configuration PERSONNALISÉE du design -->
+    <!-- <script src="assets/js/tailwind.config.js"></script> -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="font-body bg-provence-bg text-provence-text antialiased">
+
+    <!-- ================================================================== -->
+    <!-- 3. EN-TÊTE (Header) & MENU DE NAVIGATION                           -->
+    <!-- ================================================================== -->
+    <header class="bg-provence-bg/90 backdrop-blur-sm sticky top-0 z-50 shadow-sm border-b border-gray-100">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+
+            <a href="#accueil" class="text-2xl font-heading font-semibold text-provence-primary tracking-tight">
+                Les Lavandins
+            </a>
+
+            <!-- MENU ORDINATEUR (Desktop) -->
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#appartement"
+                    class="text-provence-text hover:text-provence-primary transition duration-300 font-medium">L'Appartement</a>
+                <a href="#galerie"
+                    class="text-provence-text hover:text-provence-primary transition duration-300 font-medium">Galerie</a>
+                <a href="#activites"
+                    class="text-provence-text hover:text-provence-primary transition duration-300 font-medium">Activités</a>
+
+                <a href="tel:0695453958"
+                    class="text-provence-text hover:text-provence-primary transition duration-300 font-medium flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    06 95 45 39 58
+                </a>
+
+                <a href="#contact"
+                    class="bg-provence-primary text-white px-5 py-2 rounded-full font-semibold hover:bg-opacity-90 transition duration-300 shadow-sm">Contact
+                    & Tarifs</a>
+            </div>
+
+            <!-- BOUTON MENU MOBILE -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" type="button" class="text-provence-primary p-2 focus:outline-none"
+                    aria-label="Ouvrir le menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- MENU MOBILE -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white shadow-xl border-t border-gray-100 animate-in slide-in-from-top duration-300">
+            <a href="#appartement"
+                class="block px-6 py-4 text-provence-text border-b border-gray-50 hover:bg-gray-50">L'Appartement</a>
+            <a href="#galerie"
+                class="block px-6 py-4 text-provence-text border-b border-gray-50 hover:bg-gray-50">Galerie</a>
+            <a href="#activites"
+                class="block px-6 py-4 text-provence-text border-b border-gray-50 hover:bg-gray-50">Activités</a>
+            <a href="tel:0695453958"
+                class="block px-6 py-4 text-provence-text border-b border-gray-50 hover:bg-gray-50 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-provence-primary" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                06 95 45 39 58
+            </a>
+            <a href="#contact" class="block px-6 py-4 text-provence-primary font-bold hover:bg-gray-50">Contact &
+                Tarifs</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ================================================================== -->
+        <!-- 4. SECTION ACCUEIL (HERO)                                          -->
+        <!-- ================================================================== -->
+        <section id="accueil" class="h-[70vh] min-h-[500px] flex items-center justify-center relative">
+            <div class="absolute inset-0 bg-black/40 z-10"></div>
+            <img src="assets/images/hero-bg.webp" alt="Vue panoramique Provence et champs de lavande à Tourettes (Var)"
+                class="absolute inset-0 w-full h-full object-cover">
+
+            <div class="relative z-20 text-center text-white p-6 max-w-4xl">
+                <h1 class="font-heading text-4xl sm:text-6xl font-semibold drop-shadow-2xl mb-4">
+                    Les Lavandins : Location T1 de Charme en Provence
+                </h1>
+                <p class="text-xl sm:text-2xl font-light drop-shadow-lg mb-8 italic">
+                    Escale Varoise à Tourettes : le calme de la terre, l'appel de la mer.
+                </p>
+                <a href="#appartement"
+                    class="inline-block bg-white text-provence-primary px-8 py-3 rounded-full font-bold text-lg hover:bg-provence-bg transition duration-300 shadow-xl">
+                    Découvrir le logement
+                </a>
+            </div>
+        </section>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+
+            <!-- ================================================================== -->
+            <!-- 5. SECTION L'APPARTEMENT                                           -->
+            <!-- ================================================================== -->
+            <section id="appartement" class="mb-24 scroll-mt-24">
+                <div class="text-center mb-12">
+                    <h2 class="font-heading text-3xl sm:text-5xl font-semibold text-provence-primary mb-4">
+                        Un nid douillet, rien que pour vous
+                    </h2>
+                    <div class="h-1 w-24 bg-provence-secondary mx-auto rounded-full"></div>
+                </div>
+
+                <div class="max-w-4xl mx-auto bg-white p-8 lg:p-12 rounded-2xl shadow-xl border border-gray-100">
+                    <p class="text-xl leading-relaxed mb-10 text-gray-700">
+                        Bienvenue dans votre appartement T1 de 40m², indépendant et de plain-pied, au sein de la villa
+                        **Les Lavandins**. Idéal pour 3 à 4 personnes, vous profiterez du calme de la Provence tout en
+                        restant à deux pas des commerces du village de Tourettes.
+                    </p>
+
+                    <div class="grid md:grid-cols-2 gap-12">
+                        <div class="space-y-6">
+                            <h3 class="font-heading text-2xl font-semibold text-provence-secondary flex items-center">
+                                <span
+                                    class="w-8 h-8 bg-provence-secondary/10 text-provence-secondary rounded-full flex items-center justify-center mr-3 text-sm">01</span>
+                                Le logement
+                            </h3>
+                            <ul class="space-y-4 text-gray-600">
+                                <li class="flex items-start"><span
+                                        class="text-provence-primary mr-2">✔</span><span><strong>Séjour équipé</strong>
+                                        avec un canapé BZ (couchage 140).</span></li>
+                                <li class="flex items-start"><span
+                                        class="text-provence-primary mr-2">✔</span><span><strong>Cuisine</strong>
+                                        entièrement fonctionnelle.</span></li>
+                                <li class="flex items-start"><span
+                                        class="text-provence-primary mr-2">✔</span><span><strong>Grande chambre</strong>
+                                        lumineuse (lit en 160).</span></li>
+                                <li class="flex items-start"><span
+                                        class="text-provence-primary mr-2">✔</span><span><strong>Salle de bain</strong>
+                                        moderne : douche à l'italienne et WC suspendu.</span></li>
+                                <li class="flex items-start"><span
+                                        class="text-provence-primary mr-2">✔</span><span>Toutes les pièces possèdent une
+                                        ouverture vers l'extérieur.</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="space-y-6">
+                            <h3 class="font-heading text-2xl font-semibold text-provence-secondary flex items-center">
+                                <span
+                                    class="w-8 h-8 bg-provence-secondary/10 text-provence-secondary rounded-full flex items-center justify-center mr-3 text-sm">02</span>
+                                Situation & Services
+                            </h3>
+                            <ul class="space-y-4 text-gray-600">
+                                <li class="flex items-start"><span class="text-provence-primary mr-2">📍</span><span>À
+                                        proximité immédiate du <strong>Lac de Saint-Cassien</strong>.</span></li>
+                                <li class="flex items-start"><span class="text-provence-primary mr-2">📍</span><span>À
+                                        35km de la mer (Cannes, Fréjus).</span></li>
+                                <li class="flex items-start"><span
+                                        class="text-provence-primary mr-2">🚗</span><span><strong>Parking
+                                            gratuit</strong> sur place.</span></li>
+                                <li class="flex items-start"><span
+                                        class="text-provence-primary mr-2">🛍️</span><span>Tous les commerces
+                                        accessibles à pied.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================================================================== -->
+            <!-- 6. SECTION GALERIE PHOTOS                                          -->
+            <!-- ================================================================== -->
+            <section id="galerie" class="mb-24 scroll-mt-24">
+                <div class="text-center mb-12">
+                    <h2 class="font-heading text-3xl sm:text-5xl font-semibold text-provence-primary mb-4">
+                        Un aperçu de votre séjour
+                    </h2>
+                    <p class="text-gray-500 italic mb-4">Cliquez sur une image pour l'agrandir</p>
+                    <div class="h-1 w-24 bg-provence-secondary mx-auto rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+                    <!-- Photo Chambre -->
+                    <div
+                        class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3] cursor-pointer lightbox-trigger">
+                        <img src="assets/images/room-bedroom.webp" data-full="assets/images/room-bedroom.webp"
+                            alt="Chambre spacieuse location T1 Les Lavandins"
+                            class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition duration-500 flex items-center justify-center">
+                            <span
+                                class="text-white opacity-0 group-hover:opacity-100 transition duration-300 transform translate-y-4 group-hover:translate-y-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 drop-shadow-md" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                                </svg>
+                            </span>
+                        </div>
+                        <span
+                            class="absolute bottom-4 left-4 bg-white/90 px-3 py-1 rounded text-sm font-semibold text-provence-text">La
+                            Chambre</span>
+                    </div>
+
+                    <!-- Photo Séjour -->
+                    <div
+                        class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3] cursor-pointer lightbox-trigger">
+                        <img src="assets/images/room-living.webp" data-full="assets/images/room-living.webp"
+                            alt="Séjour lumineux avec canapé convertible BZ"
+                            class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition duration-500 flex items-center justify-center">
+                            <span
+                                class="text-white opacity-0 group-hover:opacity-100 transition duration-300 transform translate-y-4 group-hover:translate-y-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 drop-shadow-md" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                                </svg>
+                            </span>
+                        </div>
+                        <span
+                            class="absolute bottom-4 left-4 bg-white/90 px-3 py-1 rounded text-sm font-semibold text-provence-text">Le
+                            Séjour</span>
+                    </div>
+
+                    <!-- Photo Salle de bain -->
+                    <div
+                        class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3] cursor-pointer lightbox-trigger">
+                        <img src="assets/images/room-bathroom.webp" data-full="assets/images/room-bathroom.webp"
+                            alt="Salle de bain moderne douche italienne gîte Var"
+                            class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition duration-500 flex items-center justify-center">
+                            <span
+                                class="text-white opacity-0 group-hover:opacity-100 transition duration-300 transform translate-y-4 group-hover:translate-y-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 drop-shadow-md" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                                </svg>
+                            </span>
+                        </div>
+                        <span
+                            class="absolute bottom-4 left-4 bg-white/90 px-3 py-1 rounded text-sm font-semibold text-provence-text">Salle
+                            de Bain</span>
+                    </div>
+
+                    <!-- Photo Cuisine -->
+                    <div
+                        class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3] cursor-pointer lightbox-trigger">
+                        <img src="assets/images/room-kitchen.webp" data-full="assets/images/room-kitchen.webp"
+                            alt="Cuisine équipée fonctionnelle appartement de vacances"
+                            class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition duration-500 flex items-center justify-center">
+                            <span
+                                class="text-white opacity-0 group-hover:opacity-100 transition duration-300 transform translate-y-4 group-hover:translate-y-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 drop-shadow-md" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                                </svg>
+                            </span>
+                        </div>
+                        <span
+                            class="absolute bottom-4 left-4 bg-white/90 px-3 py-1 rounded text-sm font-semibold text-provence-text">Cuisine
+                            Équipée</span>
+                    </div>
+
+                    <!-- Photo Extérieur -->
+                    <div
+                        class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3] cursor-pointer lightbox-trigger">
+                        <img src="assets/images/exterior-garden.webp" data-full="assets/images/exterior-garden.webp"
+                            alt="Extérieur villa et jardin Les Lavandins Tourettes"
+                            class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition duration-500 flex items-center justify-center">
+                            <span
+                                class="text-white opacity-0 group-hover:opacity-100 transition duration-300 transform translate-y-4 group-hover:translate-y-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 drop-shadow-md" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                                </svg>
+                            </span>
+                        </div>
+                        <span
+                            class="absolute bottom-4 left-4 bg-white/90 px-3 py-1 rounded text-sm font-semibold text-provence-text">Extérieur
+                            & Jardin</span>
+                    </div>
+
+                    <!-- Photo Exterieur Jardin -->
+                    <div
+                        class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3] cursor-pointer lightbox-trigger">
+                        <img src="assets/images/exterior-garden2.webp" data-full="assets/images/exterior-garden2.webp"
+                            alt="Coin détente jardin location saisonnière Var"
+                            class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition duration-500 flex items-center justify-center">
+                            <span
+                                class="text-white opacity-0 group-hover:opacity-100 transition duration-300 transform translate-y-4 group-hover:translate-y-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 drop-shadow-md" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                                </svg>
+                            </span>
+                        </div>
+                        <span
+                            class="absolute bottom-4 left-4 bg-white/90 px-3 py-1 rounded text-sm font-semibold text-provence-text">Extérieur
+                            & Jardin</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================================================================== -->
+            <!-- 7. NOUVEAU : SECTION ACTIVITÉS ET TOURISME                         -->
+            <!-- ================================================================== -->
+            <section id="activites" class="mb-24 scroll-mt-24">
+                <div class="text-center mb-12">
+                    <h2 class="font-heading text-3xl sm:text-5xl font-semibold text-provence-primary mb-4">
+                        Découvrez la région
+                    </h2>
+                    <div class="h-1 w-24 bg-provence-secondary mx-auto rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Carte 1 : Lac -->
+                    <div
+                        class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition duration-300">
+                        <img src="assets/images/activity-lake-card.webp" alt="Lac de Saint-Cassien"
+                            class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-heading text-xl font-bold text-provence-text mb-2">Lac de Saint-Cassien</h3>
+                            <p class="text-gray-600 text-sm mb-4">À seulement 5 min. Baignade, pédalo, aviron et jeux
+                                aquatiques. Un lieu incontournable pour se rafraîchir en été.</p>
+                            <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">Nature &
+                                Eau</span>
+                        </div>
+                    </div>
+
+                    <!-- Carte 2 : Villages -->
+                    <div
+                        class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition duration-300">
+                        <img src="assets/images/activity-villages.webp" alt="Villages Perchés Provence"
+                            class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-heading text-xl font-bold text-provence-text mb-2">Villages Perchés</h3>
+                            <p class="text-gray-600 text-sm mb-4">Explorez Fayence, Seillans et Callian. Des ruelles
+                                authentiques, des marchés provençaux et des vues imprenables.</p>
+                            <span
+                                class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Culture
+                                & Patrimoine</span>
+                        </div>
+                    </div>
+
+                    <!-- Carte 3 : Mer -->
+                    <div
+                        class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition duration-300">
+                        <img src="assets/images/activity-beach.webp" alt="Plages de la Côte d'Azur"
+                            class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-heading text-xl font-bold text-provence-text mb-2">La Côte d'Azur</h3>
+                            <p class="text-gray-600 text-sm mb-4">À 35 min de route. Profitez des plages de sable fin de
+                                Fréjus, Saint-Raphaël ou de la Croisette à Cannes.</p>
+                            <span class="inline-block bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full">Mer
+                                & Plage</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================================================================== -->
+            <!-- 8. SECTION CONTACT & TARIFS + CARTE                                -->
+            <!-- ================================================================== -->
+            <section id="contact" class="scroll-mt-24">
+                <div class="max-w-6xl mx-auto">
+
+                    <h2 class="font-heading text-3xl sm:text-4xl font-semibold text-provence-primary mb-12 text-center">
+                        Contact & Réservation
+                    </h2>
+
+                    <div class="grid lg:grid-cols-2 gap-12">
+                        <!-- Bloc Gauche : Coordonnées -->
+                        <div class="bg-white p-8 lg:p-12 rounded-3xl shadow-xl border border-gray-100">
+                            <h3 class="font-heading text-2xl font-semibold text-provence-secondary mb-6">Nous joindre
+                            </h3>
+                            <p class="text-gray-600 mb-8">
+                                Pour vérifier les disponibilités ou obtenir un devis, contactez-nous par téléphone ou
+                                par email.
+                            </p>
+                            <div class="space-y-6">
+                                <!-- Email -->
+                                <div class="flex items-center group">
+                                    <div
+                                        class="w-12 h-12 bg-provence-primary/10 rounded-full flex items-center justify-center mr-4 group-hover:bg-provence-primary group-hover:text-white transition duration-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                        </svg>
+                                    </div>
+                                    <a href="mailto:contact@lavandins.eu"
+                                        class="text-lg font-medium hover:text-provence-primary transition">contact@lavandins.eu</a>
+                                </div>
+                                <!-- Téléphone -->
+                                <div class="flex items-center group">
+                                    <div
+                                        class="w-12 h-12 bg-provence-primary/10 rounded-full flex items-center justify-center mr-4 group-hover:bg-provence-primary group-hover:text-white transition duration-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                        </svg>
+                                    </div>
+                                    <a href="tel:0695453958"
+                                        class="text-lg font-medium hover:text-provence-primary transition text-nowrap">06
+                                        95 45 39 58</a>
+                                </div>
+                            </div>
+
+                            <!-- Conditions -->
+                            <div class="mt-8 bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                                <h3
+                                    class="font-heading text-xl font-semibold text-provence-secondary mb-4 italic text-center">
+                                    Conditions</h3>
+                                <ul class="space-y-3 text-gray-600 text-sm">
+                                    <li class="flex justify-between border-b border-gray-200 pb-2">
+                                        <span>Arrivée (Samedi)</span><span class="font-semibold">Dès 16h00</span>
+                                    </li>
+                                    <li class="flex justify-between border-b border-gray-200 pb-2">
+                                        <span>Départ (Samedi)</span><span class="font-semibold">Avant 10h00</span>
+                                    </li>
+                                    <li class="pt-2 text-center text-xs">
+                                        Location possible à la nuitée, week-end ou semaine. Tarifs sur demande.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Bloc Droite : Carte Google Maps -->
+                        <div
+                            class="h-full min-h-[400px] rounded-3xl overflow-hidden shadow-xl border border-gray-100 relative">
+                            <iframe src="https://maps.google.com/maps?q=43.612417,6.730444&z=15&output=embed"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade" class="absolute inset-0 w-full h-full">
+                            </iframe>
+                            <a href="https://www.google.com/maps/search/?api=1&query=43.612417,6.730444" target="_blank"
+                                class="absolute bottom-4 right-4 bg-white text-provence-text px-4 py-2 rounded-lg shadow-lg text-sm font-bold hover:bg-gray-100 flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-provence-primary"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                                Itinéraire
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- ================================================================== -->
+    <!-- 9. PIED DE PAGE (Footer)                                           -->
+    <!-- ================================================================== -->
+    <footer class="bg-white border-t border-gray-100 pt-16 pb-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div>
+                    <span class="text-2xl font-heading font-semibold text-provence-primary tracking-tight">Les
+                        Lavandins</span>
+                    <p class="mt-4 text-gray-500 text-sm leading-relaxed">
+                        Location saisonnière de charme en Provence. Profitez d'un T1 indépendant au calme, entre mer et
+                        lac, pour des vacances inoubliables dans le Var.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-800 mb-4 font-heading">Plan du site</h3>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><a href="#accueil"
+                                class="hover:text-provence-primary transition decoration-transparent">Accueil</a></li>
+                        <li><a href="#appartement"
+                                class="hover:text-provence-primary transition decoration-transparent">L'Appartement &
+                                Services</a></li>
+                        <li><a href="#galerie"
+                                class="hover:text-provence-primary transition decoration-transparent">Galerie Photos</a>
+                        </li>
+                        <li><a href="#activites"
+                                class="hover:text-provence-primary transition decoration-transparent">Activités</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-800 mb-4 font-heading">Nous retrouver</h3>
+                    <ul class="space-y-3 text-sm text-gray-500">
+                        <li class="flex items-start">
+                            <span class="mr-2 mt-0.5">📍</span>
+                            <span>Tourettes, Var (83440)<br>Provence-Alpes-Côte d'Azur</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">📞</span>
+                            <a href="tel:0695453958" class="hover:text-provence-primary transition font-semibold">06 95
+                                45 39 58</a>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">✉️</span>
+                            <a href="mailto:contact@lavandins.eu"
+                                class="hover:text-provence-primary transition">contact@lavandins.eu</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-100 pt-8 text-center">
+                <p class="text-gray-400 text-sm mb-2">© 2026 - lavandins.eu - Tous droits réservés Dragon'Studio.</p>
+                <div class="flex justify-center space-x-4 text-xs text-gray-400 mb-4">
+                    <a href="#" class="hover:text-gray-600">Mentions Légales</a>
+                    <span>•</span>
+                    <a href="#" class="hover:text-gray-600">Politique de Confidentialité</a>
+                </div>
+                <p class="text-xs text-gray-300 italic">Site web propulsé avec amour.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ÉLÉMENT LIGHTBOX (Caché par défaut) -->
+    <div id="lightbox" class="fixed inset-0 z-[60] bg-black/90 hidden flex items-center justify-center p-4">
+        <!-- Bouton Fermer -->
+        <button id="lightbox-close" class="absolute top-4 right-4 text-white hover:text-gray-300 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        <!-- Image de la Lightbox -->
+        <img id="lightbox-img" src="" alt="Agrandissement"
+            class="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl">
+    </div>
+
+    <!-- ================================================================== -->
+    <!-- 10. JAVASCRIPT (Interactivité)                                     -->
+    <!-- ================================================================== -->
+    <script src="assets/js/main.js" defer></script>
+
+</body>
+
+</html>
