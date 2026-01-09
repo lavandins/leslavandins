@@ -548,13 +548,17 @@
 
                         <!-- Bloc Droite : Carte Google Maps -->
                         <div
-                            class="h-full min-h-[400px] rounded-3xl overflow-hidden shadow-xl border border-gray-100 relative">
-                            <iframe src="https://maps.google.com/maps?q=43.612417,6.730444&z=15&output=embed"
-                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade" class="absolute inset-0 w-full h-full">
-                            </iframe>
+                            class="h-full min-h-[400px] rounded-3xl overflow-hidden shadow-xl border border-gray-100 relative group">
                             <a href="https://www.google.com/maps/search/?api=1&query=43.612417,6.730444" target="_blank"
-                                class="absolute bottom-4 right-4 bg-white text-provence-text px-4 py-2 rounded-lg shadow-lg text-sm font-bold hover:bg-gray-100 flex items-center">
+                                class="block w-full h-full relative cursor-pointer" aria-label="Voir sur Google Maps">
+                                <img src="assets/images/map-preview.png" alt="Plan d'accès Les Lavandins"
+                                    class="w-full h-full object-cover transition duration-500 group-hover:scale-105 group-hover:opacity-95">
+                                <div
+                                    class="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition duration-500 flex items-center justify-center">
+                                </div>
+                            </a>
+                            <a href="https://www.google.com/maps/search/?api=1&query=43.612417,6.730444" target="_blank"
+                                class="absolute bottom-4 right-4 bg-white text-provence-text px-4 py-2 rounded-lg shadow-lg text-sm font-bold hover:bg-gray-100 flex items-center z-10 transition duration-300">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-provence-primary"
                                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
