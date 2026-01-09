@@ -656,6 +656,22 @@
     <!-- ================================================================== -->
     <script src="assets/js/main.js" defer></script>
 
+    <!-- ================================================================== -->
+    <!-- 11. SERVICE WORKER (PWA & Cache)                                   -->
+    <!-- ================================================================== -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registered with scope:', registration.scope);
+                    })
+                    .catch(error => {
+                        console.error('ServiceWorker registration failed:', error);
+                    });
+            });
+        }
+    </script>
 </body>
 
 </html>
