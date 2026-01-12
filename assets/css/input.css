@@ -1,5 +1,51 @@
 @import "tailwindcss";
 
+/* Lato Regular */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/lato-v25-latin-regular.woff2') format('woff2');
+}
+
+/* Lato Bold */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/lato-v25-latin-700.woff2') format('woff2');
+}
+
+/* Lora Regular */
+@font-face {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/lora-v37-latin-regular.woff2') format('woff2');
+}
+
+/* Lora Italic */
+@font-face {
+    font-family: 'Lora';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/lora-v37-latin-italic.woff2') format('woff2');
+}
+
+/* Lora SemiBold */
+@font-face {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('../fonts/lora-v37-latin-600.woff2') format('woff2');
+}
+
+
 @theme {
     --color-provence-primary: #798A65;
     --color-provence-secondary: #B08A5D;
