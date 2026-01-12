@@ -1,58 +1,39 @@
 <!DOCTYPE html>
-<!-- 
-  Langue du document : 'fr' pour Français. 
-  class="scroll-smooth" : Permet un défilement doux quand on clique sur les liens du menu.
--->
 <html lang="fr" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
-    <!-- Viewport : Indispensable pour que le site s'adapte aux téléphones mobiles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ================================================================== -->
-    <!-- 1. SECTION SEO (Optimisation pour les Moteurs de Recherche)        -->
-    <!-- Cette partie est invisible pour l'utilisateur, mais lue par Google.-->
-    <!-- ================================================================== -->
+    <title>Gîte Les Lavandins - Location Vacances à Tourrettes (Var) - Proche Lac</title>
 
-    <!-- Le titre qui apparaît dans l'onglet du navigateur et en bleu sur Google -->
-    <title>Location "Les Lavandins" - T1 de Charme en Provence (Var)</title>
-
-    <!-- La description courte sous le lien bleu dans Google. Doit donner envie de cliquer. -->
     <meta name="description"
-        content="Découvrez Les Lavandins : location d'un T1 de 40m² de plain-pied pour 3-4 personnes à Tourrettes (Var). Proche Lac St-Cassien, à 35km de la mer. Calme et confort.">
+        content="Réservez votre séjour aux Lavandins : T1 indépendant de 40m² avec jardin à Tourrettes (83). Idéal 2-4 pers. Parking gratuit, calme, à 5min du Lac de Saint-Cassien et 35min des plages.">
 
-    <!-- Indique à Google quelle est l'adresse "officielle" de cette page (évite le contenu dupliqué) -->
     <link rel="canonical" href="https://lavandins.eu" />
 
-    <!-- Liste de mots-clés -->
     <meta name="keywords"
-        content="location vacances var, gite Tourrettes, T1 indépendant provence, location lac saint cassien, hébergement var 4 personnes">
+        content="gîte Tourrettes, location vacances var, T1 indépendant provence, location lac saint cassien, hébergement pays de fayence, location saisonnière 83">
 
     <meta name="author" content="Les Lavandins">
 
-    <!-- FAVICON (Petite icône dans l'onglet) -->
     <link rel="icon" href="assets/images/favicon.svg">
 
-    <!-- !!! ATTENTION : MODE PUBLIC ACTIVÉ !!! -->
     <meta name="robots" content="index, follow">
 
-    <!-- === GÉOLOCALISATION === -->
     <meta name="geo.region" content="FR-83">
     <meta name="geo.placename" content="Tourrettes">
     <meta name="geo.position" content="43.612417;6.730444">
     <meta name="ICBM" content="43.612417, 6.730444">
 
-    <!-- === RÉSEAUX SOCIAUX (Open Graph) === -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lavandins.eu">
-    <meta property="og:title" content="Les Lavandins - Votre cocon en Provence">
+    <meta property="og:title" content="Les Lavandins - Gîte de charme à Tourrettes (Var)">
     <meta property="og:description"
-        content="Location T1 de charme à Tourrettes (Var). Proche Lac St-Cassien et Mer. Idéal 3-4 personnes.">
-    <meta property="og:image" content="assets/images/hero-bg.webp">
+        content="Location T1 tout équipé avec jardin. 5 min du Lac, 35 min de la mer. Calme et confort en Provence.">
+    <meta property="og:image" content="https://lavandins.eu/assets/images/hero-bg.webp">
     <meta property="og:locale" content="fr_FR">
 
-    <!-- === DONNÉES STRUCTURÉES (JSON-LD) === -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -87,28 +68,11 @@
     }
     </script>
 
-    <!-- ================================================================== -->
-    <!-- 2. CHARGEMENT DES RESSOURCES (Styles et Polices)                   -->
-    <!-- ================================================================== -->
-
-
-    <!-- Tailwind CSS -->
-    <!-- Tailwind CSS (Local Build) -->
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-
-
-    <!-- Configuration PERSONNALISÉE du design -->
-
-    <!-- Configuration PERSONNALISÉE du design -->
-    <!-- <script src="assets/js/tailwind.config.js"></script> -->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body class="font-body bg-provence-bg text-provence-text antialiased">
 
-    <!-- ================================================================== -->
-    <!-- 3. EN-TÊTE (Header) & MENU DE NAVIGATION                           -->
-    <!-- ================================================================== -->
     <header class="bg-provence-bg/90 backdrop-blur-sm sticky top-0 z-50 shadow-sm border-b border-gray-100">
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
 
@@ -116,7 +80,6 @@
                 Les Lavandins
             </a>
 
-            <!-- MENU ORDINATEUR (Desktop) -->
             <div class="hidden md:flex space-x-6 items-center">
                 <a href="#appartement"
                     class="text-provence-text hover:text-provence-primary transition duration-300 font-medium">L'Appartement</a>
@@ -140,7 +103,6 @@
                     & Tarifs</a>
             </div>
 
-            <!-- BOUTON MENU MOBILE -->
             <div class="md:hidden">
                 <button id="mobile-menu-button" type="button" class="text-provence-primary p-2 focus:outline-none"
                     aria-label="Ouvrir le menu">
@@ -153,7 +115,6 @@
             </div>
         </nav>
 
-        <!-- MENU MOBILE -->
         <div id="mobile-menu"
             class="hidden md:hidden bg-white shadow-xl border-t border-gray-100 animate-in slide-in-from-top duration-300">
             <a href="#appartement"
@@ -177,9 +138,6 @@
     </header>
 
     <main>
-        <!-- ================================================================== -->
-        <!-- 4. SECTION ACCUEIL (HERO)                                          -->
-        <!-- ================================================================== -->
         <section id="accueil" class="h-[70vh] min-h-[500px] flex items-center justify-center relative">
             <div class="absolute inset-0 bg-black/40 z-10"></div>
             <img src="assets/images/hero-bg.webp" alt="Vue panoramique Provence et champs de lavande à Tourrettes (Var)"
@@ -187,7 +145,7 @@
 
             <div class="relative z-20 text-center text-white p-6 max-w-4xl">
                 <h1 class="font-heading text-4xl sm:text-6xl font-semibold drop-shadow-2xl mb-4">
-                    Les Lavandins : Location T1 de Charme en Provence
+                    Les Lavandins : Gîte de Charme en Provence
                 </h1>
                 <p class="text-xl sm:text-2xl font-light drop-shadow-lg mb-8 italic">
                     Escale Varoise à Tourrettes : le calme de la terre, l'appel de la mer.
@@ -201,9 +159,6 @@
 
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
 
-            <!-- ================================================================== -->
-            <!-- 5. SECTION L'APPARTEMENT                                           -->
-            <!-- ================================================================== -->
             <section id="appartement" class="mb-24 scroll-mt-24">
                 <div class="text-center mb-12">
                     <h2 class="font-heading text-3xl sm:text-5xl font-semibold text-provence-primary mb-4">
@@ -214,9 +169,13 @@
 
                 <div class="max-w-4xl mx-auto bg-white p-8 lg:p-12 rounded-2xl shadow-xl border border-gray-100">
                     <p class="text-xl leading-relaxed mb-10 text-gray-700">
-                        Bienvenue dans votre appartement T1 de 40m², indépendant et de plain-pied, au sein de la villa
-                        **Les Lavandins**. Idéal pour 3 à 4 personnes, vous profiterez du calme de la Provence tout en
-                        restant à deux pas des commerces du village de Tourrettes.
+                        Envie d'une <strong>location de vacances au calme dans le Var</strong> ?
+                        Installez-vous dans ce T1 de 40m², un <strong>gîte indépendant de plain-pied</strong> situé dans
+                        une villa provençale.
+                        Idéalement conçu pour 2 à 4 personnes, notre hébergement vous offre la sérénité de
+                        l'arrière-pays
+                        tout en restant
+                        à quelques minutes de l'animation du <strong>Pays de Fayence</strong>.
                     </p>
 
                     <div class="grid md:grid-cols-2 gap-12">
@@ -224,24 +183,26 @@
                             <h3 class="font-heading text-2xl font-semibold text-provence-secondary flex items-center">
                                 <span
                                     class="w-8 h-8 bg-provence-secondary/10 text-provence-secondary rounded-full flex items-center justify-center mr-3 text-sm">01</span>
-                                Le logement
+                                Confort & Équipements
                             </h3>
                             <ul class="space-y-4 text-gray-600">
                                 <li class="flex items-start"><span
-                                        class="text-provence-primary mr-2">✔</span><span><strong>Séjour équipé</strong>
-                                        avec un canapé BZ (couchage 140).</span></li>
+                                        class="text-provence-primary mr-2">✔</span><span><strong>Séjour
+                                            lumineux</strong>
+                                        avec canapé BZ confortable (couchage 140x190).</span></li>
                                 <li class="flex items-start"><span
-                                        class="text-provence-primary mr-2">✔</span><span><strong>Cuisine</strong>
-                                        entièrement fonctionnelle.</span></li>
+                                        class="text-provence-primary mr-2">✔</span><span><strong>Cuisine
+                                            équipée</strong> pour cuisiner vos produits du marché (four, plaques,
+                                        frigo).</span></li>
                                 <li class="flex items-start"><span
-                                        class="text-provence-primary mr-2">✔</span><span><strong>Grande chambre</strong>
-                                        lumineuse (lit en 160).</span></li>
+                                        class="text-provence-primary mr-2">✔</span><span><strong>Grande chambre
+                                            séparée</strong> avec lit Queen Size (160x200) et rangements.</span></li>
                                 <li class="flex items-start"><span
-                                        class="text-provence-primary mr-2">✔</span><span><strong>Salle de bain</strong>
-                                        moderne : douche à l'italienne et WC suspendu.</span></li>
+                                        class="text-provence-primary mr-2">✔</span><span>Salle d'eau moderne avec
+                                        <strong>douche à l'italienne</strong>.</span></li>
                                 <li class="flex items-start"><span
-                                        class="text-provence-primary mr-2">✔</span><span>Toutes les pièces possèdent une
-                                        ouverture vers l'extérieur.</span></li>
+                                        class="text-provence-primary mr-2">✔</span><span>Accès direct au jardin pour vos
+                                        petits-déjeuners au soleil.</span></li>
                             </ul>
                         </div>
 
@@ -249,28 +210,26 @@
                             <h3 class="font-heading text-2xl font-semibold text-provence-secondary flex items-center">
                                 <span
                                     class="w-8 h-8 bg-provence-secondary/10 text-provence-secondary rounded-full flex items-center justify-center mr-3 text-sm">02</span>
-                                Situation & Services
+                                Localisation Stratégique
                             </h3>
                             <ul class="space-y-4 text-gray-600">
+                                <li class="flex items-start"><span class="text-provence-primary mr-2">📍</span><span>À 5
+                                        min du <strong>Lac de Saint-Cassien</strong> (baignade, pédalo).</span></li>
                                 <li class="flex items-start"><span class="text-provence-primary mr-2">📍</span><span>À
-                                        proximité immédiate du <strong>Lac de Saint-Cassien</strong>.</span></li>
-                                <li class="flex items-start"><span class="text-provence-primary mr-2">📍</span><span>À
-                                        35km de la mer (Cannes, Fréjus).</span></li>
+                                        35 min des plages de la <strong>Côte d'Azur</strong> (Cannes, Fréjus).</span>
+                                </li>
                                 <li class="flex items-start"><span
                                         class="text-provence-primary mr-2">🚗</span><span><strong>Parking
-                                            gratuit</strong> sur place.</span></li>
+                                            gratuit</strong> et sécurisé sur la propriété.</span></li>
                                 <li class="flex items-start"><span
-                                        class="text-provence-primary mr-2">🛍️</span><span>Tous les commerces
-                                        accessibles à pied.</span></li>
+                                        class="text-provence-primary mr-2">🛍️</span><span>Proche du centre de
+                                        <strong>Tourrettes</strong> et de ses commerces.</span></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- ================================================================== -->
-            <!-- 6. SECTION GALERIE PHOTOS                                          -->
-            <!-- ================================================================== -->
             <section id="galerie" class="mb-24 scroll-mt-24">
                 <div class="text-center mb-12">
                     <h2 class="font-heading text-3xl sm:text-5xl font-semibold text-provence-primary mb-4">
@@ -281,11 +240,11 @@
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
-                    <!-- Photo Chambre -->
                     <div
                         class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3] cursor-pointer lightbox-trigger">
-                        <img src="assets/images/room-bedroom.webp" data-full="assets/images/room-bedroom.webp"
-                            alt="Chambre spacieuse location T1 Les Lavandins"
+                        <img src="assets/images/room-bedroom.webp" loading="lazy"
+                            data-full="assets/images/room-bedroom.webp"
+                            alt="Chambre grand lit location gîte Les Lavandins à Tourrettes"
                             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                         <div
                             class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition duration-500 flex items-center justify-center">
@@ -303,11 +262,10 @@
                             Chambre</span>
                     </div>
 
-                    <!-- Photo Séjour -->
                     <div
                         class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3] cursor-pointer lightbox-trigger">
-                        <img src="assets/images/room-living.webp" data-full="assets/images/room-living.webp"
-                            alt="Séjour lumineux avec canapé convertible BZ"
+                        <img src="assets/images/room-living.webp" loading="lazy"
+                            data-full="assets/images/room-living.webp" alt="Séjour lumineux canapé BZ gîte var"
                             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                         <div
                             class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition duration-500 flex items-center justify-center">
@@ -325,11 +283,11 @@
                             Séjour</span>
                     </div>
 
-                    <!-- Photo Salle de bain -->
                     <div
                         class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3] cursor-pointer lightbox-trigger">
-                        <img src="assets/images/room-bathroom.webp" data-full="assets/images/room-bathroom.webp"
-                            alt="Salle de bain moderne douche italienne gîte Var"
+                        <img src="assets/images/room-bathroom.webp" loading="lazy"
+                            data-full="assets/images/room-bathroom.webp"
+                            alt="Salle de bain douche italienne gîte Tourrettes"
                             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                         <div
                             class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition duration-500 flex items-center justify-center">
@@ -347,11 +305,10 @@
                             de Bain</span>
                     </div>
 
-                    <!-- Photo Cuisine -->
                     <div
                         class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3] cursor-pointer lightbox-trigger">
-                        <img src="assets/images/room-kitchen.webp" data-full="assets/images/room-kitchen.webp"
-                            alt="Cuisine équipée fonctionnelle appartement de vacances"
+                        <img src="assets/images/room-kitchen.webp" loading="lazy"
+                            data-full="assets/images/room-kitchen.webp" alt="Cuisine équipée location vacances var"
                             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                         <div
                             class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition duration-500 flex items-center justify-center">
@@ -369,11 +326,10 @@
                             Équipée</span>
                     </div>
 
-                    <!-- Photo Extérieur -->
                     <div
                         class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3] cursor-pointer lightbox-trigger">
-                        <img src="assets/images/exterior-garden.webp" data-full="assets/images/exterior-garden.webp"
-                            alt="Extérieur villa et jardin Les Lavandins Tourrettes"
+                        <img src="assets/images/exterior-garden.webp" loading="lazy"
+                            data-full="assets/images/exterior-garden.webp" alt="Jardin privatif villa Les Lavandins"
                             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                         <div
                             class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition duration-500 flex items-center justify-center">
@@ -391,11 +347,11 @@
                             & Jardin</span>
                     </div>
 
-                    <!-- Photo Exterieur Jardin -->
                     <div
                         class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3] cursor-pointer lightbox-trigger">
-                        <img src="assets/images/exterior-garden2.webp" data-full="assets/images/exterior-garden2.webp"
-                            alt="Coin détente jardin location saisonnière Var"
+                        <img src="assets/images/exterior-garden2.webp" loading="lazy"
+                            data-full="assets/images/exterior-garden2.webp"
+                            alt="Coin détente extérieur location saisonnière"
                             class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                         <div
                             class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition duration-500 flex items-center justify-center">
@@ -415,9 +371,6 @@
                 </div>
             </section>
 
-            <!-- ================================================================== -->
-            <!-- 7. NOUVEAU : SECTION ACTIVITÉS ET TOURISME                         -->
-            <!-- ================================================================== -->
             <section id="activites" class="mb-24 scroll-mt-24">
                 <div class="text-center mb-12">
                     <h2 class="font-heading text-3xl sm:text-5xl font-semibold text-provence-primary mb-4">
@@ -427,54 +380,54 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Carte 1 : Lac -->
                     <div
                         class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition duration-300">
-                        <img src="assets/images/activity-lake-card.webp" alt="Lac de Saint-Cassien"
-                            class="w-full h-48 object-cover">
+                        <img src="assets/images/activity-lake-card.webp" alt="Activités nautiques Lac de Saint-Cassien"
+                            loading="lazy" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <h3 class="font-heading text-xl font-bold text-provence-text mb-2">Lac de Saint-Cassien</h3>
-                            <p class="text-gray-600 text-sm mb-4">À seulement 5 min. Baignade, pédalo, aviron et jeux
-                                aquatiques. Un lieu incontournable pour se rafraîchir en été.</p>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Votre location est à 5 min de ce joyau du Var. Pédalo, aviron, jeux aquatiques ou simple
+                                farniente sur les berges. Le spot idéal pour se rafraîchir.
+                            </p>
                             <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">Nature &
                                 Eau</span>
                         </div>
                     </div>
 
-                    <!-- Carte 2 : Villages -->
                     <div
                         class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition duration-300">
-                        <img src="assets/images/activity-villages.webp" alt="Villages Perchés Provence"
-                            class="w-full h-48 object-cover">
+                        <img src="assets/images/activity-villages.webp" alt="Villages Perchés du Pays de Fayence"
+                            loading="lazy" class="w-full h-48 object-cover">
                         <div class="p-6">
-                            <h3 class="font-heading text-xl font-bold text-provence-text mb-2">Villages Perchés</h3>
-                            <p class="text-gray-600 text-sm mb-4">Explorez Fayence, Seillans et Callian. Des ruelles
-                                authentiques, des marchés provençaux et des vues imprenables.</p>
+                            <h3 class="font-heading text-xl font-bold text-provence-text mb-2">Pays de Fayence</h3>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Explorez les villages authentiques autour de Tourrettes : <strong>Fayence</strong>,
+                                Seillans (classé plus beau village) ou Callian. Marchés provençaux garantis !
+                            </p>
                             <span
                                 class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Culture
                                 & Patrimoine</span>
                         </div>
                     </div>
 
-                    <!-- Carte 3 : Mer -->
                     <div
                         class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition duration-300">
-                        <img src="assets/images/activity-beach.webp" alt="Plages de la Côte d'Azur"
-                            class="w-full h-48 object-cover">
+                        <img src="assets/images/activity-beach.webp" alt="Plages de la Côte d'Azur proche Var"
+                            loading="lazy" class="w-full h-48 object-cover">
                         <div class="p-6">
-                            <h3 class="font-heading text-xl font-bold text-provence-text mb-2">La Côte d'Azur</h3>
-                            <p class="text-gray-600 text-sm mb-4">À 35 min de route. Profitez des plages de sable fin de
-                                Fréjus, Saint-Raphaël ou de la Croisette à Cannes.</p>
+                            <h3 class="font-heading text-xl font-bold text-provence-text mb-2">Mer & Estérel</h3>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Envie d'eau salée ? Rejoignez les plages de Mandelieu, Cannes ou Saint-Raphaël en 35
+                                min. Randonnez aussi dans le massif rouge de l'Estérel.
+                            </p>
                             <span class="inline-block bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full">Mer
-                                & Plage</span>
+                                & Montagne</span>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- ================================================================== -->
-            <!-- 8. SECTION CONTACT & TARIFS + CARTE                                -->
-            <!-- ================================================================== -->
             <section id="contact" class="scroll-mt-24">
                 <div class="max-w-6xl mx-auto">
 
@@ -483,7 +436,6 @@
                     </h2>
 
                     <div class="grid lg:grid-cols-2 gap-12">
-                        <!-- Bloc Gauche : Coordonnées -->
                         <div class="bg-white p-8 lg:p-12 rounded-3xl shadow-xl border border-gray-100">
                             <h3 class="font-heading text-2xl font-semibold text-provence-secondary mb-6">Nous joindre
                             </h3>
@@ -492,7 +444,6 @@
                                 par email.
                             </p>
                             <div class="space-y-6">
-                                <!-- Email -->
                                 <div class="flex items-center group">
                                     <div
                                         class="w-12 h-12 bg-provence-primary/10 rounded-full flex items-center justify-center mr-4 group-hover:bg-provence-primary group-hover:text-white transition duration-300">
@@ -505,7 +456,6 @@
                                     <a href="mailto:contact@lavandins.eu"
                                         class="text-lg font-medium hover:text-provence-primary transition">contact@lavandins.eu</a>
                                 </div>
-                                <!-- Téléphone -->
                                 <div class="flex items-center group">
                                     <div
                                         class="w-12 h-12 bg-provence-primary/10 rounded-full flex items-center justify-center mr-4 group-hover:bg-provence-primary group-hover:text-white transition duration-300">
@@ -521,7 +471,6 @@
                                 </div>
                             </div>
 
-                            <!-- Conditions -->
                             <div class="mt-8 bg-gray-50 p-6 rounded-2xl border border-gray-100">
                                 <h3
                                     class="font-heading text-xl font-semibold text-provence-secondary mb-4 italic text-center">
@@ -540,12 +489,12 @@
                             </div>
                         </div>
 
-                        <!-- Bloc Droite : Carte Google Maps -->
                         <div
                             class="h-full min-h-[400px] rounded-3xl overflow-hidden shadow-xl border border-gray-100 relative group">
                             <a href="https://www.google.com/maps/search/?api=1&query=43.612417,6.730444" target="_blank"
                                 class="block w-full h-full relative cursor-pointer" aria-label="Voir sur Google Maps">
-                                <img src="assets/images/map-preview.webp" alt="Plan d'accès Les Lavandins"
+                                <img src="assets/images/map-preview.webp" loading="lazy"
+                                    alt="Plan d'accès Les Lavandins"
                                     class="w-full h-full object-cover transition duration-500 group-hover:scale-105 group-hover:opacity-95">
                                 <div
                                     class="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition duration-500 flex items-center justify-center">
@@ -570,9 +519,6 @@
         </div>
     </main>
 
-    <!-- ================================================================== -->
-    <!-- 9. PIED DE PAGE (Footer)                                           -->
-    <!-- ================================================================== -->
     <footer class="bg-white border-t border-gray-100 pt-16 pb-8">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -631,28 +577,19 @@
         </div>
     </footer>
 
-    <!-- ÉLÉMENT LIGHTBOX (Caché par défaut) -->
     <div id="lightbox" class="fixed inset-0 z-[60] bg-black/90 hidden flex items-center justify-center p-4">
-        <!-- Bouton Fermer -->
         <button id="lightbox-close" class="absolute top-4 right-4 text-white hover:text-gray-300 focus:outline-none">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
             </svg>
         </button>
-        <!-- Image de la Lightbox -->
         <img id="lightbox-img" src="" alt="Agrandissement"
             class="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl">
     </div>
 
-    <!-- ================================================================== -->
-    <!-- 10. JAVASCRIPT (Interactivité)                                     -->
-    <!-- ================================================================== -->
     <script src="assets/js/main.js" defer></script>
 
-    <!-- ================================================================== -->
-    <!-- 11. SERVICE WORKER (PWA & Cache)                                   -->
-    <!-- ================================================================== -->
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
