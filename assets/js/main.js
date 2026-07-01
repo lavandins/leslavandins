@@ -35,17 +35,34 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// --- 3. Lightbox (Zoom Photos) ---
+// --- 3. Lightbox (Zoom Photos & Carousel) ---
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightbox-img');
 const lightboxClose = document.getElementById('lightbox-close');
+const lightboxPrev = document.getElementById('lightbox-prev');
+const lightboxNext = document.getElementById('lightbox-next');
 const triggers = document.querySelectorAll('.lightbox-trigger img');
 
+let currentIndex = 0;
+const imagesArray = Array.from(triggers);
+
 if (lightbox && lightboxImg && lightboxClose) {
+    const updateLightboxImage = (index) => {
+        if (index < 0) index = imagesArray.length - 1;
+        if (index >= imagesArray.length) index = 0;
+        currentIndex = index;
+        const img = imagesArray[currentIndex];
+        const fullSizeSrc = img.getAttribute('data-full') || img.src;
+        
+        requestAnimationFrame(() => {
+            lightboxImg.src = fullSizeSrc;
+        });
+    };
+
     // Ouvrir la lightbox
-    triggers.forEach(img => {
+    imagesArray.forEach((img, index) => {
         img.parentElement.addEventListener('click', () => {
-            // Lecture (Read)
+            currentIndex = index;
             const fullSizeSrc = img.getAttribute('data-full') || img.src;
 
             // Écriture (Write) dans rAF
@@ -66,6 +83,17 @@ if (lightbox && lightboxImg && lightboxClose) {
     };
 
     lightboxClose.addEventListener('click', closeLightbox);
+    
+    if (lightboxPrev && lightboxNext) {
+        lightboxPrev.addEventListener('click', (e) => {
+            e.stopPropagation();
+            updateLightboxImage(currentIndex - 1);
+        });
+        lightboxNext.addEventListener('click', (e) => {
+            e.stopPropagation();
+            updateLightboxImage(currentIndex + 1);
+        });
+    }
 
     lightbox.addEventListener('click', (e) => {
         if (e.target === lightbox) {
@@ -74,8 +102,14 @@ if (lightbox && lightboxImg && lightboxClose) {
     });
 
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
-            closeLightbox();
+        if (!lightbox.classList.contains('hidden')) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            } else if (e.key === 'ArrowLeft') {
+                updateLightboxImage(currentIndex - 1);
+            } else if (e.key === 'ArrowRight') {
+                updateLightboxImage(currentIndex + 1);
+            }
         }
     });
 }
