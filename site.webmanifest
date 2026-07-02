@@ -1,0 +1,16 @@
+{
+  "name": "Les Lavandins",
+  "short_name": "Lavandins",
+  "description": "Location T1 tout équipé avec jardin à Tourrettes.",
+  "icons": [
+    {
+      "src": "/assets/images/favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#9b85a3"
+}
