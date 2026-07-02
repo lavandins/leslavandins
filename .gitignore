@@ -1,2 +1,4 @@
 tailwindcss
 optimize_images.py
+._*
+.DS_Store
